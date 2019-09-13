@@ -13,85 +13,116 @@
         <img src="img/nerds-logo1.svg" width="160" height="67" alt="«Нёрдс»">
       </a>
       <ul>
-        <li><a href="">Студия</a></li>
-        <li><a href="">Клиенты</a></li>
-        <li><a href="">Магазин</a></li>
-        <li><a href="">Контакты</a></li>
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="customers.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul>
         <li>
-          <img src="img/icon-basket.svg">
-          <a href="">Корзина</a>
+          <img src="img/icon-basket.svg" alt="Корзина">
+          <a href="basket.html">Корзина</a>
         </li>
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="intro">
       <h1>Магазин готовых шаблонов</h1>
     </section>
     <section class="catalog">
       <form>
-        <h2>Фильтр</h2>
+        <h2 class="visually-hidden">Фильтр</h2>
 
         <h3>СТОИМОСТЬ:</h3>
-        <input type="range" name="cost" min="0" max="15000" />
+        <input type="range" name="cost" min="0" max="15000">
         <div>
-          <label for="from">ОТ</label><input type="text" id="from" name="from" value="0" />
-          <label for="to">ДО</label><input type="text" id="to" name="to" value="15 000" />
+          <label for="from">ОТ</label>
+          <input type="text" id="from" name="from" value="0">
+
+          <label for="to">ДО</label>
+          <input type="text" id="to" name="to" value="15 000">
         </div>
         <h3>Сетка:</h3>
         <ul>
           <li>
-            <input type="radio" name="greed" id="Adaptive" value="1" checked /><label for="Adaptive">Адаптивная</label>
+            <input type="radio" name="greed" id="Adaptive" value="1" checked>
+            <label for="Adaptive">Адаптивная</label>
           </li>
           <li>
-            <input type="radio" name="greed" id="Fixed" value="2" /><label for="Fixed">Фиксированная</label>
+            <input type="radio" name="greed" id="Fixed" value="2">
+            <label for="Fixed">Фиксированная</label>
           </li>
           <li>
-            <input type="radio" name="greed" id="Rubber" value="3" /><label for="Rubber">Резиновая</label>
+            <input type="radio" name="greed" id="Rubber" value="3">
+            <label for="Rubber">Резиновая</label>
           </li>
         </ul>
 
         <h3>ОСОБЕННОСТИ:</h3>
         <ul>
           <li>
-            <input type="checkbox" name="option1" id="slider" value="1" checked /><label for="slider">Слайдер</label>
+            <input type="checkbox" name="option1" id="slider" value="1" checked>
+            <label for="slider">Слайдер</label>
           </li>
           <li>
-            <input type="checkbox" name="option2" id="advantages" value="2" /><label for="advantages">Блок
-              преимуществ</label>
+            <input type="checkbox" name="option2" id="advantages" value="2">
+            <label for="advantages">Блок преимуществ</label>
           </li>
           <li>
-            <input type="checkbox" name="option3" id="news" value="3" checked /><label for="news">Новости</label>
+            <input type="checkbox" name="option3" id="news" value="3" checked>
+            <label for="news">Новости</label>
           </li>
-          <li><input type="checkbox" name="option4" id="passage" value="4" /><label for="passage">Галерея</label></li>
-          <li><input type="checkbox" name="option5" id="basket" value="5" /><label for="basket">Корзина</label></li>
+          <li>
+            <input type="checkbox" name="option4" id="passage" value="4">
+            <label for="passage">Галерея</label>
+          </li>
+          <li>
+            <input type="checkbox" name="option5" id="basket" value="5">
+            <label for="basket">Корзина</label>
+          </li>
         </ul>
-        <button>Показать</button>
+        <button type="submit">Показать</button>
       </form>
     </section>
 
     <section>
       <h3>СОРТИРОВАТЬ:</h3>
       <ul>
-        <li><input type="radio" name="sort" id="price" value="1" /><label for="price">по цене</label></li>
-        <li><input type="radio" name="sort" id="type" value="2" /><label for="type">по типу</label></li>
-        <li><input type="radio" name="sort" id="name" value="3" /><label for="name">по названию</label></li>
+        <li>
+          <input type="radio" name="sort" id="price" value="1">
+          <label for="price">по цене</label>
+        </li>
+        <li>
+          <input type="radio" name="sort" id="type" value="2">
+          <label for="type">по типу</label>
+        </li>
+        <li>
+          <input type="radio" name="sort" id="name" value="3">
+          <label for="name">по названию</label>
+        </li>
       </ul>
       <ul>
-        <li><input type="radio" name="sort-direction" id="asc" value="ASC" /><label for="asc"></label></li>
-        <li><input type="radio" name="sort-direction" id="desc" value="DESC" /><label for="desc"></label></li>
+        <li>
+          <input type="radio" name="sort-direction" id="asc" value="ASC">
+          <label for="asc"></label>
+        </li>
+        <li>
+          <input type="radio" name="sort-direction" id="desc" value="DESC">
+          <label for="desc"></label>
+        </li>
       </ul>
     </section>
 
     <section>
+      <h3 class="visually-hidden">Шаблоны</h3>
       <article>
         <a href="">
           <h3>Sedona</h3>
         </a>
         <div>
-          <img src="img/img-sedona.jpg" width="360" height="576" />
+          <img src="img/img-sedona.jpg" width="360" height="576" alt="Готовый шаблон Sedona">
         </div>
       </article>
       <article>
@@ -99,7 +130,7 @@
           <h3>Pink</h3>
         </a>
         <div>
-          <img src="img/img-pink.jpg" width="360" height="576" />
+          <img src="img/img-pink.jpg" width="360" height="576" alt="Готовый шаблон Pink">
         </div>
       </article>
       <article>
@@ -107,7 +138,7 @@
           <h3>Borodinski</h3>
         </a>
         <div>
-          <img src="img/img-barbershop.jpg" width="360" height="576" />
+          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Готовый шаблон Borodinski">
         </div>
       </article>
       <article>
@@ -115,7 +146,7 @@
           <h3>Mishka</h3>
         </a>
         <div>
-          <img src="img/img-mishka.jpg" width="360" height="576" />
+          <img src="img/img-mishka.jpg" width="360" height="576" alt="Готовый шаблон Mishka">
         </div>
       </article>
       <article>
@@ -123,7 +154,7 @@
           <h3>Aplus</h3>
         </a>
         <div>
-          <img src="img/img-aplus.jpg" width="360" height="576" />
+          <img src="img/img-aplus.jpg" width="360" height="576" alt="Готовый шаблон Aplus">
         </div>
       </article>
       <article>
@@ -131,11 +162,12 @@
           <h3>Kvast</h3>
         </a>
         <div>
-          <img src="img/img-kvast.jpg" width="360" height="576" />
+          <img src="img/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон Kvast">
         </div>
       </article>
     </section>
     <section>
+      <h3 class="visually-hidden">Страницы</h3>
       <a href="">1</a>
       <a href="">2</a>
       <a href="">3</a>
@@ -145,9 +177,9 @@
 
   <footer>
     <div>
-      <h2>Как нас найти</h2>
+      <h2 class="visually-hidden">Как нас найти</h2>
       <div>
-        <img src="img/map-contacts.jpg" />
+        <img src="img/map-contacts.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная д.19/9">
       </div>
       <div>
         <h3>NЁRDS DESIGN STUDIO</h3>
@@ -157,8 +189,8 @@
       </div>
     </div>
   <div>
-    <form>
-     <h3>Нпишите нам</h3>
+    <form  action="https://echo.htmlacademy.ru" method="post">
+     <h3>Нaпишите нам</h3>
      <div>
        <div>
         <label for="yourname">Ваше имя:</label>
@@ -173,16 +205,19 @@
         <textarea name="popup" id="yourtext" rows="5" cols="55" placeholder="В свободной форме"></textarea>
       </div>
       <div>
-        <button>Отправить</button>
+        <button type="submit">Отправить</button>
       </div>
       </div>
     </form>
+    <div>
+        <button type="submit"><img src="img/close-cross-popup.png" alt="Закрыть"></button>
+    </div>
   </div>
-    <h2>Соцсети</h2>
+    <h2 class="visually-hidden">Соцсети</h2>
     <ul>
-        <li><a href="#"><img src="img/vk.svg"></a></li>
-        <li><a href="#"><img src="img/facebook.svg"></a></li>
-        <li><a href="#"><img src="img/instagram.svg"></a></li>
+        <li><a href="#" aria-label="Нёрдс во ВКонтакте"><img src="img/vk.svg" alt="ВКонтакте"></a></li>
+        <li><a href="#" aria-label="Нёрдс в Фейсбуке"><img src="img/facebook.svg" alt="Фейсбуке"></a></li>
+        <li><a href="#" aria-label="Нёрдс в Инстаграм"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
     </ul>
     <p>Давайте дружить, это выгодно!</p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
