@@ -18,7 +18,7 @@ a {
   }
 
 .main-navigation {
-  font-size: 16 px;
+  font-size: 16px;
   line-height: 30px;
   color: #000000;
 
@@ -39,16 +39,12 @@ a {
   color: #ff0000;
 }
 
-
-.intro {
-  text-size: 55px;
-  font-weight: bold;
-}
 .filters li {
   list-style: none;
 }
 .filters h3 {
-  text-size: 30px;
+  font-size: 18px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -56,20 +52,114 @@ a {
   background-color: #eeeeee;
 }
 .sort h3 {
-  text-size: 30px;
+  font-size: 18px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
 }
 .sort li{
   list-style: none;
 }
+.intro {
+  background-color: #eeeeee;
+}
+.intro h1 {
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 55px;
+}
+.intro p {
+  font-size: 16px;
+}
+.sort {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.catalog-pages a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #eeeeee;
+  color: #000000;
+}
+.catalog-pages a:hover,
+.catalog-pages a:focus {
+  background-color: white;
+  border: 2px solid #eeeeee;
+}
+
+.slide a {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+.slide p{
+  font-size: 18px;
+  color: #283136;
+}
+p.slide-motto  {
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 55px;
+  color: #000000;
+}
+.slide-switches li {
+  list-style: none;
+}
 
 
+.information-us p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+p.us-header {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.information-list p {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.information-list li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
 .features-list h3{
-  text-size: 24px;
+  font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.information-researches p {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 24px;
+}
+.information-researches tr {
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136;
+}
+tr.interest {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 10px;
+}
+.logo-client {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
 .features-list a {
   color: #ffffff;
 }
@@ -102,14 +192,16 @@ a {
   text-align: center;
 }
 .catalog-item a {
-  text-size: 30px;
+  font-size: 18px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
   color: #000000;
 }
 .catalog-item p {
-  text-size: 18px;
-  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
 }
 .catalog-item button {
   color: #ffffff;
@@ -117,16 +209,65 @@ a {
 }
 
 
-.footer-social ul {
+li.social-button {
   list-style: none;
+}
+.footer-contacts {
+  background-color: #ffffff;
+  width: 319px;
+  height: 308px;
+}
+.footer-contacts h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
+}
+.footer-contacts p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+.footer-contacts a {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb565a;
 }
 
 p.proposal {
-  text-size: 36px;
+  font-size: 36px;
   text-transform: uppercase;
   font-weight: bold;
   color: #000000;
 }
 p.sale  {
+  font-size: 16px;
+  line-height: 22px;
   color: #444444;
 }
+
+
+
+.popup-window {
+  background-color: white;
+  width: 960px;
+  height: 590px;
+}
+.window-entry label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.window-button button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+
+
