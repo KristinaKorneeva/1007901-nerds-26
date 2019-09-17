@@ -4,21 +4,25 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Нёрдс</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="img/nerds-logo1.svg" width="160" height="67" alt="«Нёрдс»" />
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="">Студия</a></li>
         <li><a href="">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
-      <ul>
+      <ul class="user-navigation">
         <li>
           <img src="img/icon-basket.svg" alt="Корзина">
           <a href="">Корзина</a>
@@ -27,8 +31,8 @@
     </nav>
   </header>
 
-  <main>
-    <section>
+  <main class="container">
+    <section class="slides">
       <h3 class="visually-hidden">Слайды</h3>
       <div>
         <p>
@@ -72,10 +76,10 @@
           </ul>
     </section>
 
-    <section>
+    <section class="amenities">
       <h3 class="visually-hidden">Услуги</h3>
-      <ul>
-        <li>
+      <ul class="features-list">
+        <li class="feature-item-sites">
           <div>
             <img src="img/illustration-1.jpg" width="300" height="143" alt="">
           </div>
@@ -83,7 +87,7 @@
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a href="">ЗАКАЗАТЬ</a>
         </li>
-        <li>
+        <li class="feature-item-applications">
           <div>
             <img src="img/illustration-2.jpg" width="300" height="143" alt="">
           </div>
@@ -91,7 +95,7 @@
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="">ЗАКАЗАТЬ</a>
         </li>
-        <li>
+        <li class="feature-item-presentation">
           <div>
             <img src="img/illustration-3.jpg" width="300" height="143" alt="">
           </div>
@@ -101,6 +105,7 @@
         </li>
       </ul>
     </section>
+
     <article>
       <h3 class="visually-hidden">О нас</h3>
       <section>
@@ -150,7 +155,7 @@
       <div>
         <img src="img/map-contacts.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная д.19/9">
       </div>
-      <div>
+      <div class="footer-contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
@@ -182,16 +187,16 @@
         <button type="submit"><img src="img/close-cross-popup.png" alt="Закрыть"></button>
       </div>
     </div>
-    <div>
+    <div class="footer-social">
       <h2 class="visually-hidden">Соцсети</h2>
       <ul>
-        <li><a href="#" aria-label="Нёрдс во ВКонтакте"><img src="img/vk.svg" alt="ВКонтакте"></a></li>
-        <li><a href="#" aria-label="Нёрдс в Фейсбуке"><img src="img/facebook.svg" alt="Фейсбуке"></a></li>
-        <li><a href="#" aria-label="Нёрдс в Инстаграм"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
+        <li class="social-button"><a href="#" aria-label="Нёрдс во ВКонтакте"><img src="img/vk.svg" alt="ВКонтакте"></a></li>
+        <li class="social-button"><a href="#" aria-label="Нёрдс в Фейсбуке"><img src="img/facebook.svg" alt="Фейсбуке"></a></li>
+        <li class="social-button"><a href="#" aria-label="Нёрдс в Инстаграм"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
       </ul>
+    <p class="proposal">Давайте дружить, это выгодно!</p>
+    <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
     </div>
-    <p>Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
 </body>
 

@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  }
+
+a {
+   text-decoration: none;
+  }
+
+.main-navigation {
+  font-size: 16 px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ff0000;
+}
+
+
+.intro {
+  text-size: 55px;
+  font-weight: bold;
+}
+.filters li {
+  list-style: none;
+}
+.filters h3 {
+  text-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.filters-show {
+  background-color: #eeeeee;
+}
+.sort h3 {
+  text-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.sort li{
+  list-style: none;
+}
+
+
+.features-list h3{
+  text-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.features-list a {
+  color: #ffffff;
+}
+.feature-item-sites a {
+  background-color: #ff0000;
+}
+.feature-item-applications a {
+  background-color: #00ca74;
+}
+.feature-item-presentation a {
+  background-color: #efc84a;
+}
+.feature-item-sites a:hover,
+.feature-item-sites a:focus {
+  background-color: #e74246;
+
+}
+.feature-item-applications a:hover,
+.feature-item-applications a:focus {
+  background-color: #00bc6c;
+}
+.feature-item-presentation a:hover,
+.feature-item-presentation a:focus {
+  background-color: #eab534;
+}
+.catalog-item {
+  background-color: #eeeeee;
+  width: 360px;
+  height: 231px;
+  text-align: center;
+}
+.catalog-item a {
+  text-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+}
+.catalog-item p {
+  text-size: 18px;
+  color: #000000;
+}
+.catalog-item button {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+
+.footer-social ul {
+  list-style: none;
+}
+
+p.proposal {
+  text-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+}
+p.sale  {
+  color: #444444;
+}
