@@ -4,27 +4,27 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
+  <header class="header">
+    <nav class="navigation">
+      <a class="header-logo" href="index.html">
         <img src="img/nerds-logo1.svg" width="160" height="67" alt="«Нёрдс»">
       </a>
-      <ul class="site-navigation">
-        <li><a href="">Студия</a></li>
-        <li><a href="">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="">Контакты</a></li>
+      <ul>
+        <li><a class="site-navigation" href="">Студия</a></li>
+        <li><a class="site-navigation" href="">Клиенты</a></li>
+        <li><a class="site-navigation" href="catalog.html">Магазин</a></li>
+        <li><a class="site-navigation" href="">Контакты</a></li>
       </ul>
-      <ul class="user-navigation">
+      <ul>
         <li>
           <img src="img/icon-basket.svg" alt="Корзина">
-          <a href="">Корзина</a>
+          <a class="site-navigation" href="">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -32,13 +32,13 @@
 
   <main>
     <section class="intro">
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="title">Магазин готовых шаблонов</h1>
     </section>
     <section class="filters">
       <form>
         <h2 class="visually-hidden">Фильтр</h2>
 
-        <h3>Стоимость:</h3>
+        <h3 class="title-bar">Стоимость:</h3>
         <input type="range" name="cost" min="0" max="15000">
         <div>
           <label for="from">ОТ</label>
@@ -48,8 +48,8 @@
           <input type="text" id="to" name="to" value="15 000">
         </div>
 
-        <h3>Сетка:</h3>
-        <ul class="radio-button">
+        <h3 class="title-bar">Сетка:</h3>
+        <ul class="radio-button-group">
           <li>
             <input type="radio" name="greed" id="Adaptive" value="1" checked>
             <label for="Adaptive">Адаптивная</label>
@@ -64,8 +64,8 @@
           </li>
         </ul>
 
-        <h3>Особенности:</h3>
-        <ul class="checkbox">
+        <h3 class="title-bar">Особенности:</h3>
+        <ul class="radio-button-group ">
           <li>
             <input type="checkbox" name="option1" id="slider" value="1" checked>
             <label for="slider">Слайдер</label>
@@ -87,13 +87,13 @@
             <label for="basket">Корзина</label>
           </li>
         </ul>
-        <button class="filters-show" type="submit">Показать</button>
+        <button class="submit" type="submit">Показать</button>
       </form>
     </section>
 
-    <section class="sort">
-      <h3>Сортировать:</h3>
-      <ul>
+    <section>
+      <h3 class="title-bar">Сортировать:</h3>
+      <ul class="radio-button-group ">
         <li>
           <input type="radio" name="sort" id="price" value="1">
           <label for="price">по цене</label>
@@ -107,7 +107,7 @@
           <label for="name">по названию</label>
         </li>
       </ul>
-      <ul>
+      <ul class="radio-button-group ">
         <li>
           <input type="radio" name="sort-direction" id="asc" value="ASC">
           <label for="asc"><!--вверх--></label>
@@ -123,11 +123,11 @@
       <h3 class="visually-hidden">Каталог шаблонов</h3>
       <article class="catalog-list">
         <div class="catalog-item">
-          <a href="">
-            <h3>Sedona</h3>
+          <a class="catalog-link" class="catalog-header" href="">
+            <h3 class="title-bar">Sedona</h3>
           </a>
-          <p>Информационный сайт<br>для туристов</p>
-          <button type="submit">9 900  руб.</button>
+          <p>Информационный сайт для туристов</p>
+          <button class="catalog-submit" type="submit">9 900  руб.</button>
          </div>
         <div class="product-photo-preview">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Готовый шаблон Sedona">
@@ -135,11 +135,11 @@
       </article>
       <article class="catalog-list">
         <div class="catalog-item">
-          <a href="">
-           <h3>Pink</h3>
+          <a class="catalog-link" class="catalog-header" href="">
+           <h3 class="title-bar">Pink</h3>
           </a>
-          <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-          <button type="submit">9 900  руб.</button>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <button class="catalog-submit" type="submit">9 900  руб.</button>
         </div>
         <div class="product-photo-preview">
           <img src="img/img-pink.jpg" width="360" height="576" alt="Готовый шаблон Pink">
@@ -147,11 +147,11 @@
       </article>
       <article class="catalog-list">
         <div class="catalog-item">
-          <a href="">
-            <h3>Borodinski</h3>
+          <a class="catalog-link" class="catalog-header" href="">
+            <h3 class="title-bar">Borodinski</h3>
           </a>
-          <p>сайт салона кросоты<br>Для мужчин, да.</p>
-          <button type="submit">9 900  руб.</button>
+          <p>сайт салона кросоты Для мужчин, да.</p>
+          <button class="catalog-submit" type="submit">9 900  руб.</button>
         </div>
         <div class="product-photo-preview">
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Готовый шаблон Borodinski">
@@ -159,11 +159,11 @@
       </article>
       <article class="catalog-list">
         <div class="catalog-item">
-          <a href="">
-            <h3>Mishka</h3>
+          <a class="catalog-link" class="catalog-header" href="">
+            <h3 class="title-bar">Mishka</h3>
           </a>
-          <p>Интернет-магазин<br>вязаных игрушек</p>
-          <button type="submit">9 900  руб.</button>
+          <p>Интернет-магазин вязаных игрушек</p>
+          <button class="catalog-submit" type="submit">9 900  руб.</button>
         </div>
         <div class="product-photo-preview">
           <img src="img/img-mishka.jpg" width="360" height="576" alt="Готовый шаблон Mishka">
@@ -171,11 +171,11 @@
       </article>
       <article class="catalog-list">
         <div class="catalog-item">
-          <a href="">
-           <h3>Aplus</h3>
+          <a class="catalog-link" class="catalog-header" href="">
+           <h3 class="title-bar">Aplus</h3>
           </a>
-          <p>Лендинг курсов повышения<br>квалификации</p>
-          <button type="submit">9 900  руб.</button>
+          <p>Лендинг курсов повышения квалификации</p>
+          <button class="catalog-submit" type="submit">9 900  руб.</button>
         </div>
         <div class="product-photo-preview">
           <img src="img/img-aplus.jpg" width="360" height="576" alt="Готовый шаблон Aplus">
@@ -183,11 +183,11 @@
       </article>
       <article class="catalog-list">
         <div class="catalog-item">
-        <a href="">
-          <h3>Kvast</h3>
+        <a class="catalog-link" class="catalog-header" href="">
+          <h3 class="title-bar">Kvast</h3>
         </a>
-        <p>Промо-сайт произыодителя<br>крафтового кваса</p>
-          <button type="submit">9 900  руб.</button>
+        <p>Промо-сайт произыодителя крафтового кваса</p>
+          <button class="catalog-submit" type="submit">9 900  руб.</button>
         </div>
         <div class="product-photo-preview">
           <img src="img/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон Kvast">
@@ -196,60 +196,58 @@
     </section>
     <section class="catalog-pages">
       <h3 class="visually-hidden">Страницы</h3>
-      <a href="">1</a>
-      <a href="">2</a>
-      <a href="">3</a>
-      <a href="">следующая</a>
+      <a class="catalog-pages-link" href="">1</a>
+      <a class="catalog-pages-link" href="">2</a>
+      <a class="catalog-pages-link" href="">3</a>
+      <a class="catalog-pages-link" href="">следующая</a>
     </section>
   </main>
 
   <footer>
     <div class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div>
+      <div class="modal-map">
         <img src="img/map-contacts.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная д.19/9">
       </div>
       <div class="footer-contacts">
-        <h3>NЁRDS DESIGN STUDIO</h3>
+        <h3  class="title-bar">NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <a href="mailto:info@nerds.ru">Напишите нам</a>
+        <a class="contacts-link" href="mailto:info@nerds.ru">Напишите нам</a>
       </div>
     </div>
-  <div class="popup-window">
+  <div class="popup">
     <form  action="https://echo.htmlacademy.ru" method="post">
-     <h3>Нaпишите нам</h3>
-     <div class="window">
-       <div class="window-entry">
-        <label for="appointment-name">Ваше имя:</label>
-        <input type="text" name="name" id="appointment-name" placeholder="Имя Фамилия">
-      </div>
-      <div class="window-entry">
-        <label for="appointment-email">Ваш e-mail:</label>
-        <input type="text" name="mail" id="appointment-email" placeholder="email@example.com">
-      </div>
-      <div class="window-entry">
-        <label for="appointment-text">Текст письма:</label><br>
-        <textarea name="text" id="appointment-text" rows="5" cols="55" placeholder="В свободной форме"></textarea>
-      </div>
-      <div class="window-button">
-        <button type="submit">Отправить</button>
-      </div>
+     <h3 class="intro-title">Нaпишите нам</h3>
+     <div class="wrapper">
+       <p class="form-field">
+        <label class="form-label" for="appointment-name">Ваше имя:</label>
+        <input class="form-input" type="text" name="name" id="appointment-name" placeholder="Имя Фамилия">
+       </p>
+        <p class="form-field">
+        <label class="form-label" for="appointment-email">Ваш e-mail:</label>
+        <input class="form-input" type="text" name="mail" id="appointment-email" placeholder="email@example.com">
+        </p>
+        <p class="form-field">
+        <label class="form-label" for="appointment-text">Текст письма:</label><br>
+        <textarea class="form-input" name="text" id="appointment-text" rows="5" cols="55" placeholder="В свободной форме"></textarea>
+        </p>
+        <p class="form-field">
+        <button class="contacts-link" type="submit">Отправить</button>
+        </p>
       </div>
     </form>
-    <div class="close">
         <button type="submit"><img src="img/close-cross-popup.png" alt="Закрыть"></button>
-    </div>
   </div>
   <div class="footer-social">
     <h2 class="visually-hidden">Соцсети</h2>
-    <ul>
-        <li class="social-button"><a href="#" aria-label="Нёрдс во ВКонтакте"><img src="img/vk.svg" alt="ВКонтакте"></a></li>
-        <li class="social-button"><a href="#" aria-label="Нёрдс в Фейсбуке"><img src="img/facebook.svg" alt="Фейсбуке"></a></li>
-        <li class="social-button"><a href="#" aria-label="Нёрдс в Инстаграм"><img src="img/instagram.svg" alt="Инстаграм"></a></li>
+    <ul class="social-list">
+        <li class="social-item"><a class="social-link" href="#" aria-label="Нёрдс во ВКонтакте"><img class="social-img" src="img/vk.svg" alt="ВКонтакте"></a></li>
+        <li class="social-item"><a class="social-link" href="#" aria-label="Нёрдс в Фейсбуке"><img class="social-img" src="img/facebook.svg" alt="Фейсбуке"></a></li>
+        <li class="social-item"><a class="social-link" href="#" aria-label="Нёрдс в Инстаграм"><img class="social-img" src="img/instagram.svg" alt="Инстаграм"></a></li>
     </ul>
-    <p class="proposal">Давайте дружить, это выгодно!</p>
-    <p class="sale">Скидка 10% для друзей из социальных сетей.</p>
+    <p class="footer-title">Давайте дружить, это выгодно!</p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
   </div>
   </footer>
 </body>

@@ -1,12 +1,12 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-family: 'Roboto', Arial, sans-serif;;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #283136;
 
   background-color: #ffffff;
   background-position: top center;
@@ -18,258 +18,128 @@ a {
   }
 
   /* header */
-.main-navigation {
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
+.navigation {
   background-color: #eeeeee;
 }
-.site-navigation,
-.user-navigation {
+.site-navigation {
   list-style: none;
-}
-.site-navigation a,
-.user-navigation a {
+  line-height: 30px;
   color: #000000;
 }
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  color: #ff0000;
+.site-navigation:hover,
+.site-navigation:focus {
+  color: #fb565a;
+}
+.site-navigation:active {
+  border-bottom: 2px solid #fb565a;
 }
 
 
 /* main */
-
 .intro {
   background-color: #eeeeee;
 }
-.intro h1 {
+.title {
   font-size: 55px;
-  font-weight: bold;
   line-height: 55px;
+  font-weight: bold;
 }
-.intro p {
-  font-size: 16px;
-}
-.slide a {
-  font-size: 16px;
+.slide-link {
   text-transform: uppercase;
-  font-weight: 400;
   color: #ffffff;
   background-color: #fb565a;
 }
-.slide p{
-  font-size: 18px;
-  color: #283136;
-}
-p.slide-motto  {
-  font-size: 55px;
-  font-weight: bold;
-  line-height: 55px;
-  color: #000000;
-}
-.slide-switches li {
+.slide-button {
   list-style: none;
 }
-.features-list a {
+.feature-link {
   color: #ffffff;
 }
-.feature-item-sites a {
+.site {
   background-color: #ff0000;
 }
-.feature-item-applications a {
+.applications{
   background-color: #00ca74;
 }
-.feature-item-presentation a {
+.presentations {
   background-color: #efc84a;
 }
-.feature-item-sites a:hover,
-.feature-item-sites a:focus {
+.site:hover,
+.site:focus {
   background-color: #e74246;
-
 }
-.feature-item-applications a:hover,
-.feature-item-applications a:focus {
+.applications:hover,
+.applications:focus {
   background-color: #00bc6c;
 }
-.feature-item-presentation a:hover,
-.feature-item-presentation a:focus {
+.presentations:hover,
+.presentations:focus {
   background-color: #eab534;
 }
-.information-us p {
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-}
-p.us-header {
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 45px;
-}
-.information-list p {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 24px;
-}
-.information-list li {
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-}
-.features-list h3{
+.sub-title {
   font-size: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
+  text-transform: uppercase
 }
-
-.information-researches p {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 24px;
-}
-.information-researches tr {
-  font-size: 16px;
-  line-height: 18px;
-  color: #283136;
-}
-tr.interest {
+.intro-title {
   font-size: 45px;
+  line-height: 45px;
   font-weight: bold;
-  line-height: 10px;
 }
-.logo-client {
+.information-title {
+  font-weight: bold;
+}
+.logo-clients {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
 /* catalog */
-
-.filters li {
-  list-style: none;
-}
-.filters h3 {
+.title-bar {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  font-weight: bold;
-}
-.filters-show {
-  background-color: #eeeeee;
-}
-.sort h3 {
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.sort li{
-  list-style: none;
-}
-.sort {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-.catalog-item {
-  background-color: #eeeeee;
-  width: 360px;
-  height: 231px;
-  text-align: center;
-}
-.catalog-item a {
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
   color: #000000;
 }
-.catalog-item p {
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-}
-.catalog-item button {
+.catalog-submit {
   color: #ffffff;
   background-color: #fb565a;
 }
-.catalog-pages a {
-  font-size: 14px;
-  line-height: 18px;
+.catalog-item {
+  width: 360px;
+  min-height: 231px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.catalog-pages-link {
   text-transform: uppercase;
   font-weight: bold;
   background-color: #eeeeee;
   color: #000000;
 }
-.catalog-pages a:hover,
-.catalog-pages a:focus {
+.catalog-pages-link:hover,
+.catalog-pages-link:focus {
   background-color: white;
   border: 2px solid #eeeeee;
 }
 
 /* footer */
-
-.footer-contacts {
-  background-color: #ffffff;
-  width: 319px;
-  height: 308px;
-}
-.footer-contacts h3 {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 30px;
-}
-.footer-contacts p {
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-}
-.footer-contacts a {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #fb565a;
-}
-.popup-window {
-  background-color: white;
-  width: 960px;
-  height: 590px;
-}
-.window-entry label {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 18px;
-}
-
-.window-button button {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #fb565a;
-}
-
-p.proposal {
+.footer-title {
   font-size: 36px;
-  text-transform: uppercase;
+  line-height: 36px;
   font-weight: bold;
-  color: #000000;
 }
-p.sale  {
+.contacts-link {
+  color: #ffffff;
+  background-color: #fb565a;
+}
+.form-label {
   font-size: 16px;
-  line-height: 22px;
-  color: #444444;
+  line-height: 18px;
+  font-weight: bold;
 }
-li.social-button {
+.social-item {
   list-style: none;
 }
-
-
 
 
 
