@@ -52,28 +52,31 @@ a {
 .slide-button {
   list-style: none;
 }
+.features-list {
+  list-style: none;
+}
 .feature-link {
   color: #ffffff;
 }
-.site {
+.site-link {
   background-color: #ff0000;
 }
-.applications{
+.applications-link {
   background-color: #00ca74;
 }
-.presentations {
+.presentations-link {
   background-color: #efc84a;
 }
-.site:hover,
-.site:focus {
+.site-link:hover,
+.site-link:focus {
   background-color: #e74246;
 }
-.applications:hover,
-.applications:focus {
+.applications-link:hover,
+.applications-link:focus {
   background-color: #00bc6c;
 }
-.presentations:hover,
-.presentations:focus {
+.presentations-link:hover,
+.presentations-link:focus {
   background-color: #eab534;
 }
 .sub-title {
