@@ -31,7 +31,7 @@ a {
   color: #fb565a;
 }
 .site-navigation:active {
-  border-bottom: 2px solid #fb565a;
+  color: #a6a6a6;
 }
 
 
@@ -48,6 +48,14 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
+}
+.slide-link:hover,
+.slide-link:focus {
+  background-color: #e74246;
+}
+.slide-link:active {
+  color: #e37376;
+  background-color: #d7373b;
 }
 .slide-button {
   list-style: none;
@@ -79,6 +87,18 @@ a {
 .presentations-link:focus {
   background-color: #eab534;
 }
+.site-link:active {
+  color: #e37376;
+  background-color: #d7373b;
+}
+.applications-link:active {
+  color: #4dc491;
+  background-color: #00aa62;
+}
+.presentations-link:active {
+  color: #edc265;
+  background-color: #e5a722;
+}
 .sub-title {
   font-size: 24px;
   text-transform: uppercase
@@ -97,15 +117,32 @@ a {
 }
 
 /* catalog */
+.radio-button-group {
+  list-style: none;
+}
 .title-bar {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
 }
+.title-bar:hover,
+.title-bar:focus {
+  color: #fb565a;
+}
+.title-bar:active {
+  color: #b2b2b2;
+}
 .catalog-submit {
   color: #ffffff;
   background-color: #fb565a;
+}
+.catalog-submit:hover,
+.catalog-submit:focus {
+  background-color: #e74246;
+}
+.catalog-submit:active {
+  background-color: #d7373b;
 }
 .catalog-item {
   width: 360px;
@@ -121,10 +158,20 @@ a {
 }
 .catalog-pages-link:hover,
 .catalog-pages-link:focus {
-  background-color: white;
-  border: 2px solid #eeeeee;
+  background-color: #dfdfdf;
 }
-
+.catalog-pages-link:active {
+  color: #999999;
+  background-color: #d5d5d5;
+}
+.submit:hover,
+.submit:focus {
+  background-color: #dfdfdf;
+}
+.submit:active {
+  color: #959595;
+  background-color: #d5d5d5;
+}
 /* footer */
 .footer-title {
   font-size: 36px;
@@ -143,6 +190,5 @@ a {
 .social-item {
   list-style: none;
 }
-
 
 
