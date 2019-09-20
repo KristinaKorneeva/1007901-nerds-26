@@ -44,6 +44,7 @@ a {
   line-height: 55px;
   font-weight: bold;
 }
+
 .slide-link {
   text-transform: uppercase;
   color: #ffffff;
@@ -56,6 +57,9 @@ a {
 .slide-link:active {
   color: #e37376;
   background-color: #d7373b;
+}
+.submit-button:active {
+  box-shadow: inset 0px 5px 2px -5px rgba(0, 0, 0, 0.5);
 }
 .slide-button {
   list-style: none;
