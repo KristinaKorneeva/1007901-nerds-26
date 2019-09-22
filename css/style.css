@@ -1,198 +1,236 @@
 body {
-  margin: 0 auto;
-  padding: 0;
-
-  font-family: 'Roboto', Arial, sans-serif;;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #283136;
-
   background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
+  color: #283136;
+  font-family: 'Roboto', Arial, sans-serif;;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 auto;
+  padding: 0;
   }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
   }
 
   /* header */
+
 .navigation {
   background-color: #eeeeee;
 }
-.site-navigation {
-  list-style: none;
-  line-height: 30px;
-  color: #000000;
-}
-.site-navigation:hover,
-.site-navigation:focus {
-  color: #fb565a;
-}
-.site-navigation:active {
-  color: #a6a6a6;
-}
+
 
 
 /* main */
 .intro {
   background-color: #eeeeee;
 }
-.title {
+.subtitle {
   font-size: 55px;
-  line-height: 55px;
   font-weight: bold;
+  line-height: 55px;
 }
 
-.slide-link {
-  text-transform: uppercase;
+/*Кнопки*/
+.button {
+  border: none;
+  border-radius: 5px;
   color: #ffffff;
-  background-color: #fb565a;
+  display: inline-block;
+  font-size: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
 }
-.slide-link:hover,
-.slide-link:focus {
-  background-color: #e74246;
-}
-.slide-link:active {
-  color: #e37376;
-  background-color: #d7373b;
-}
-.submit-button:active {
+.button:active {
   box-shadow: inset 0px 5px 2px -5px rgba(0, 0, 0, 0.5);
 }
-.slide-button {
+.button-grey {
+  background-color: #eeeeee;
+}
+.btn {
+  color: #000000;
+}
+.button-grey:hover,
+.button-grey:focus {
+  background-color: #dfdfdf;
+}
+.button-grey:active {
+  background-color: #d5d5d5;
+  color: #959595;
+}
+.button-red {
+  background-color: #ff0000;
+}
+.button-red:hover,
+.button-red:focus {
+  background-color: #e74246;
+}
+.button-red:active {
+  background-color: #d7373b;
+  color: #e37376;
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+.button-green:active {
+  background-color: #00aa62;
+  color: #4dc491;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+.button-yellow:active {
+  background-color: #e5a722;
+  color: #edc265;
+}
+.catalog-red-button:active {
+  color: white;
+}
+
+
+
+.sub-title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+/* пагинация слайды */
+.slide-pagination {
   list-style: none;
 }
+
+/* услуги */
 .features-list {
   list-style: none;
 }
-.feature-link {
-  color: #ffffff;
-}
-.site-link {
-  background-color: #ff0000;
-}
-.applications-link {
-  background-color: #00ca74;
-}
-.presentations-link {
-  background-color: #efc84a;
-}
-.site-link:hover,
-.site-link:focus {
-  background-color: #e74246;
-}
-.applications-link:hover,
-.applications-link:focus {
-  background-color: #00bc6c;
-}
-.presentations-link:hover,
-.presentations-link:focus {
-  background-color: #eab534;
-}
-.site-link:active {
-  color: #e37376;
-  background-color: #d7373b;
-}
-.applications-link:active {
-  color: #4dc491;
-  background-color: #00aa62;
-}
-.presentations-link:active {
-  color: #edc265;
-  background-color: #e5a722;
-}
-.sub-title {
-  font-size: 24px;
-  text-transform: uppercase
-}
+
+
 .intro-title {
   font-size: 45px;
+  font-weight: bold;
   line-height: 45px;
+}
+
+.text {
   font-weight: bold;
 }
-.information-title {
-  font-weight: bold;
-}
+/*логотип клиентов*/
 .logo-clients {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
+
+
+
 /* catalog */
+/* фильтр */
 .radio-button-group {
   list-style: none;
 }
-.title-bar {
+.radio-button:hover,
+.radio-button:focus {
+  color: #4d4d4d;
+}
+
+.sorting {
+  color: #b2b2b2;
+}
+.sorting:hover,
+.sorting:focus {
+  color: #666666;
+}
+.sorting:active {
+  color: #000000;
+}
+
+
+.tagline {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #000000;
 }
-.title-bar:hover,
-.title-bar:focus {
-  color: #fb565a;
-}
-.title-bar:active {
-  color: #b2b2b2;
-}
-.catalog-submit {
-  color: #ffffff;
-  background-color: #fb565a;
-}
-.catalog-submit:hover,
-.catalog-submit:focus {
-  background-color: #e74246;
-}
-.catalog-submit:active {
-  background-color: #d7373b;
-}
+
 .catalog-item {
-  width: 360px;
+  background-color: #eeeeee;
   min-height: 231px;
   text-align: center;
-  background-color: #eeeeee;
+  width: 360px;
 }
-.catalog-pages-link {
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #eeeeee;
+/* каталог шаблонов  и навигационное меню*/
+.link {
   color: #000000;
 }
-.catalog-pages-link:hover,
-.catalog-pages-link:focus {
-  background-color: #dfdfdf;
+.link:hover,
+.link:focus {
+  color: #fb565a;
 }
-.catalog-pages-link:active {
-  color: #999999;
-  background-color: #d5d5d5;
+.link:active {
+  color: #b2b2b2;
 }
-.submit:hover,
-.submit:focus {
-  background-color: #dfdfdf;
-}
-.submit:active {
-  color: #959595;
-  background-color: #d5d5d5;
-}
+
+
+
 /* footer */
-.footer-title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: bold;
+/* контакты */
+.contacts {
+  min-height: 309px;
+  width: 319px;
 }
-.contacts-link {
-  color: #ffffff;
-  background-color: #fb565a;
+.footer-contacts {
+  padding-left: 51px;
+  padding-right: 38px;
+  padding-top: 53px;
+  padding-bottom: 47px;
 }
-.form-label {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
-}
+/*соцсети */
 .social-item {
   list-style: none;
 }
 
 
+
+/* попап */
+.form-label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.form-input {
+  border-radius: 2px;
+  border: 2px solid #d7dcde;
+  color: #d7dcde;
+}
+.form-input:hover {
+  border: 2px solid #b4b9bb;
+}
+.form-input:hover::placeholder {
+  color: #b4b9bb;
+}
+.form-input:focus {
+  border: 2px solid #000000;
+}
+.form-input:focus::placeholder {
+  color: #000000;
+}
+/* описание */
+.footer-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
