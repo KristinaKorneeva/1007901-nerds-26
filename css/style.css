@@ -112,7 +112,11 @@ a {
 .slide-pagination {
   list-style: none;
 }
-
+.pagination {
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+}
 /* услуги */
 .features-list {
   list-style: none;
@@ -234,3 +238,4 @@ a {
   font-weight: bold;
   line-height: 36px;
 }
+
