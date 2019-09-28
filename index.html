@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <nav class="navigation inner">
-      <a class="header-logo">
+      <a class="header-logo" href="">
         <img src="img/nerds-logo1.svg" width="160" height="67" alt="«Нёрдс»">
       </a>
       <ul class="site-navigation">
@@ -72,7 +72,7 @@
         -->
         </div>
           <ul class="slide-pagination">
-            <li class="pagination"><button class="pagination-btn"></button></li>
+            <li class="pagination"><button class="pagination-btn activ-pagination"></button></li>
             <li class="pagination"><button class="pagination-btn"></button></li>
             <li class="pagination"><button class="pagination-btn"></button></li>
           </ul>
@@ -132,23 +132,23 @@
                 превыше креатива. Работаем не покладая рук, как роботы.
                 </p>
               </div>
-              <div class="information-list">
+              <div>
                 <p class="text">Выполняем заказы на разработку:</p>
-                <ul>
-                  <li>Веб-сайтов любой сложности</li>
-                  <li>Мобильных приложений для iOS и Android</li>
-                  <li>Слайдшоу и видео для корпоративных презентаций</li>
+                <ul class="information-list">
+                  <li class="item-info">Веб-сайтов любой сложности</li>
+                  <li class="item-info">Мобильных приложений для iOS и Android</li>
+                  <li class="item-info">Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
               </div>
             </div>
             <div class="information-researches">
             <div><img class="information-logo" src="img/nerds-illustration.png" width="360" height="208" alt="Логотип Нёрдс"></div>
               <p class="text">с 2004 года Любим точность во всем:</p>
-              <table>
+              <table class="table">
                 <tr class="intro-title">
-                  <td>146 <sup>%</sup></td>
-                  <td>100 <sup>%</sup></td>
-                  <td>50 <sup>%</sup></td>
+                  <td>146<sup>%</sup></td>
+                  <td>100<sup>%</sup></td>
+                  <td>50<sup>%</sup></td>
                 </tr>
                 <tr>
                   <td>Уровень самоотдачи</td>
@@ -161,10 +161,10 @@
           <section class="logo-clients">
             <div class="logo-info">
             <h3 class="visually-hidden">Логотип Клиентов</h3>
-              <a class="logo-client" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1html.png" alt="Логотип HTML"></a>
-              <a class="logo-client" href=""><img src="img/logo-2barbershop.png" alt="Логотип Borodinski"></a>
-              <a class="logo-client" href=""><img src="img/logo-3pink.png" alt="Логотип Pink"></a>
-              <a class="logo-client" href=""><img src="img/logo-4mishka.png" alt="Логотип Mishka"></a>
+              <a class="logo-client" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-academy.png" alt="Логотип HTML"></a>
+              <a class="logo-client" href=""><img src="img/logo-borodinski.png" alt="Логотип Borodinski"></a>
+              <a class="logo-client" href=""><img src="img/logo-miska.png" alt="Логотип Pink"></a>
+              <a class="logo-client" href=""><img src="img/logo-pink.png" alt="Логотип Mishka"></a>
             </div>
           </section>
       </div>
@@ -176,13 +176,18 @@
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="modal-map">
         <!-- Карта -->
-      </div>
-        <div class="footer-contacts inner">
+        <div class="inner">
+        <div class="marker-contact">
+          <img src="img/map-marker-nerds.png">
+        </div>
+         <div class="footer-contacts">
           <h3  class="tagline">NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
             <a class="button button-red" href="mailto:info@nerds.ru">Напишите нам</a>
         </div>
+        </div>
+      </div>
     </div>
 
 
@@ -190,9 +195,9 @@
         <div class="social">
           <h2 class="visually-hidden">Соцсети</h2>
             <ul class="social-list">
-              <li class="social-item"><a href="#" aria-label="Нёрдс во ВКонтакте"><img class="social-icon" src="img/vk.svg" alt="ВКонтакте"></a></li>
-              <li class="social-item"><a href="#" aria-label="Нёрдс в Фейсбуке"><img class="social-icon" src="img/facebook.svg" alt="Фейсбуке"></a></li>
-              <li class="social-item"><a href="#" aria-label="Нёрдс в Инстаграм"><img class="social-link" src="img/instagram.svg" alt="Инстаграм"></a></li>
+              <li class="social-item"><a class="social-link" href="#" aria-label="Нёрдс во ВКонтакте"><img class="social-icon" src="img/vk-icon.png" alt="ВКонтакте"></a></li>
+              <li class="social-item"><a class="social-link" href="#" aria-label="Нёрдс в Фейсбуке"><img class="social-icon" src="img/fb-icon.png" alt="Фейсбуке"></a></li>
+              <li class="social-item"><a class="social-link" href="#" aria-label="Нёрдс в Инстаграм"><img class="social-icon" src="img/insta-icon.png" alt="Инстаграм"></a></li>
             </ul>
         </div>
         <div class="footer">
@@ -222,7 +227,7 @@
             </p>
           </div>
         </form>
-          <button class="close-button" type="submit"><img src="img/close-cross-popup.png" alt="Закрыть"></button>
+          <button class="close-button" type="submit"><img src="img/close-cross.png" alt="Закрыть"></button>
     </div>
   </footer>
 </body>
