@@ -78,6 +78,7 @@ a {
 .site-cart {
   list-style: none;
 }
+
 /* слайд */
 .intro {
   background-color: #eeeeee;
@@ -87,15 +88,21 @@ a {
   padding-bottom: 80px;
   padding-top: 54px;
 }
-.section-slide {
+.container-slide {
   align-items: center;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
-.slide {
+
+.slider-item {
   display: flex;
   justify-content: space-between;
 }
+
+/*
+
+
 .slide:nth-child(3) {
   display: none;
 }
@@ -136,11 +143,10 @@ a {
   top: 3px;
   width: 8px;
 }
-
-
 .pagination {
   padding-right: 17px;
 }
+*/
 
 /*Кнопки*/
 .button {
