@@ -96,39 +96,48 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.slide:nth-child(3) {
+  display: none;
+}
+.slide:nth-child(4) {
+  display: none;
+}
+
 .subtitle {
   font-size: 55px;
   font-weight: bold;
   line-height: 55px;
 }
 .slide-pagination {
-  bottom: 75px;
+  bottom: 104px;
   display: flex;
   list-style: none;
   position: absolute;
-  right: 530px;
+  left: 50%;
 }
 .pagination-btn {
   border: none;
   border-radius: 50%;
+  cursor: pointer;
   height: 18px;
   padding: 0;
+  position: relative;
   width: 18px;
 }
-.activ-pagination {
-  position: relative;
-}
+
 .activ-pagination::after {
   border: 2px solid #c1c1c1;
   border-radius: 50%;
   content: "";
   display: block;
   height: 8px;
-  left: 2.5px;
+  left: 3px;
   position: absolute;
   top: 3px;
   width: 8px;
 }
+
+
 .pagination {
   padding-right: 17px;
 }
@@ -138,6 +147,7 @@ a {
   border: none;
   border-radius: 5px;
   color: #ffffff;
+  cursor: pointer;
   display: inline-block;
   font-size: 16px;
   padding-left: 26px;
@@ -203,6 +213,10 @@ a {
   background: #ffffff;
   border: 2px solid #dbdbdb;
   color: #000000;
+}
+.btn {
+  padding-left: 89px;
+  padding-right: 89px;
 }
 
 /* услуги */
@@ -523,6 +537,7 @@ a {
   margin-right: 27px;
 }
 .sorting-filtr + .filter-label-sort {
+  cursor: pointer;
   color: #b2b2b2;
   font-size: 14px;
   text-transform: uppercase;
@@ -539,6 +554,7 @@ a {
   margin-left: 17px;
 }
 .icon-up + .filter-label-sort {
+  cursor: pointer;
   content: "";
   opacity: 0.3;
 }
@@ -578,10 +594,12 @@ a {
   height: 41px;
   width: 360px;
 }
-.catalog-list:hover {
+.catalog-list:hover,
+.catalog-list:focus {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
 }
-.catalog-list:hover::before {
+.catalog-list:hover::before,
+.catalog-list:focus::before {
   background: #4d4d4d;
 }
 .catalog-list:hover .catalog-item {
@@ -657,6 +675,7 @@ a {
 .footer-social {
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 75px;
 }
 .social {
   padding-right: 130px;
@@ -695,6 +714,7 @@ a {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
+  margin-bottom: 0;
 }
 /* попап */
 .popup {
