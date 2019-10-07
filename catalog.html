@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -46,11 +46,12 @@
                 <legend class="tagline">Стоимость:</legend>
                   <div class="range-filter">
                     <div class="range-controls">
+                       <button type="reset" class="toggle toggle-min"></button>
+                        <button type="reset" class="toggle toggle-max"></button>
                       <div class="scale">
                         <div class="bar" style="margin-left: 20%; width: 30%"></div>
                       </div>
-                        <button type="reset" class="toggle toggle-min"></button>
-                        <button type="reset" class="toggle toggle-max"></button>
+
                     </div>
                     <div class="price-controls">
                       <label class="min-price price">от <input class="from-to" name="min-price" type="text" value="0"></label>
@@ -100,7 +101,7 @@
                     </li>
                   </ul>
               </fieldset>
-                <button class="button button-grey btn" type="submit">Показать</button>
+                <button class="button filter-button" type="submit"><span class="button-text">Показать</span></button>
       </form>
     </section>
     <section class="sort-product">
@@ -142,85 +143,85 @@
           <h3 class="visually-hidden">Список карточек товаров</h3>
             <section class="catalog">
               <h3 class="visually-hidden">Карточки товаров</h3>
-                  <article class="catalog-list">
+                  <article class="catalog-item">
                     <a class="product-photo-preview">
                       <img class="product-image" src="img/img-sedona.jpg" width="360" height="576"  alt="Готовый шаблон Sedona">
                     </a>
-                    <div class="catalog-item">
+                    <div class="catalog-info">
                       <a class="link" href="">
                         <h3 class="tagline">Sedona</h3>
                       </a>
                         <p>Информационный сайт для туристов</p>
-                      <button class="button button-red catalog-red-button" type="submit">9 900  руб.</button>
+                      <button class="button button-red catalog-button" type="submit">9 900  руб.</button>
                     </div>
                   </article>
-                  <article class="catalog-list">
+                  <article class="catalog-item">
                     <a class="product-photo-preview">
                       <img class="product-image" src="img/img-pink.jpg" width="360" height="576" alt="Готовый шаблон Pink">
                     </a>
-                    <div class="catalog-item">
+                    <div class="catalog-info">
                       <a class="link" href="">
                         <h3 class="tagline">Pink</h3>
                       </a>
                       <p>Продуктовый лендинг приложения для iOS и Android</p>
-                      <button class="button button-red catalog-red-button" type="submit">9 900  руб.</button>
+                      <button class="button button-red catalog-button" type="submit">9 900  руб.</button>
                     </div>
                   </article>
-                  <article class="catalog-list">
+                  <article class="catalog-item">
                     <a class="product-photo-preview">
                       <img class="product-image" src="img/img-barbershop.jpg" width="360" height="576" alt="Готовый шаблон Borodinski">
                     </a>
-                    <div class="catalog-item">
+                    <div class="catalog-info">
                       <a class="link" href="">
                         <h3 class="tagline">Borodinski</h3>
                       </a>
                       <p>сайт салона кросоты Для мужчин, да.</p>
-                      <button class="button button-red catalog-red-button" type="submit">9 900  руб.</button>
+                      <button class="button button-red catalog-button" type="submit">9 900  руб.</button>
                     </div>
                   </article>
-                  <article class="catalog-list">
+                  <article class="catalog-item">
                     <a class="product-photo-preview">
                       <img class="product-image" src="img/img-mishka.jpg" width="360" height="576" alt="Готовый шаблон Mishka">
                     </a>
-                    <div class="catalog-item">
+                    <div class="catalog-info">
                       <a class="link" href="">
                         <h3 class="tagline">Mishka</h3>
                       </a>
                       <p>Интернет-магазин вязаных игрушек</p>
-                      <button class="button button-red catalog-red-button" type="submit">9 900  руб.</button>
+                      <button class="button button-red catalog-button" type="submit">9 900  руб.</button>
                     </div>
                   </article>
-                  <article class="catalog-list">
+                  <article class="catalog-item">
                     <a class="product-photo-preview">
                       <img class="product-image" src="img/img-aplus.jpg" width="360" height="576" alt="Готовый шаблон Aplus">
                     </a>
-                    <div class="catalog-item">
+                    <div class="catalog-info">
                       <a class="link" href="">
                         <h3 class="tagline">Aplus</h3>
                       </a>
                       <p>Лендинг курсов повышения квалификации</p>
-                      <button class="button button-red catalog-red-button" type="submit">9 900  руб.</button>
+                      <button class="button button-red catalog-button" type="submit">9 900  руб.</button>
                     </div>
                   </article>
-                  <article class="catalog-list">
+                  <article class="catalog-item">
                     <a class="product-photo-preview">
                       <img class="product-image" src="img/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон Kvast">
                     </a>
-                    <div class="catalog-item">
+                    <div class="catalog-info">
                       <a class="link" href="">
                         <h3 class="tagline">Kvast</h3>
                       </a>
                       <p>Промо-сайт произыодителя крафтового кваса</p>
-                      <button class="button button-red catalog-red-button" type="submit">9 900  руб.</button>
+                      <button class="button button-red catalog-button" type="submit">9 900  руб.</button>
                     </div>
                   </article>
             </section>
             <section class="catalog-pages">
               <h3 class="visually-hidden">Страницы</h3>
-                <a class="button button-grey active-btn" href="">1</a>
-                <a class="button button-grey" href="">2</a>
-                <a class="button button-grey" href="">3</a>
-                <a class="button button-grey" href="">следующая</a>
+                <a class="button pagination-button pagination-active" href=""><span class="button-text">1</span></a>
+                <a class="button pagination-button" href=""><span class="button-text">2</span></a>
+                <a class="button pagination-button" href=""><span class="button-text">3</span></a>
+                <a class="button pagination-button" href=""><span class="button-text">следующая</span></a>
             </section>
         </section>
     </section>
@@ -237,7 +238,7 @@
               <h3  class="tagline">NЁRDS DESIGN STUDIO</h3>
                 <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <p>тел. +7 (812) 275-75-75</p>
-                <a class="button button-red button-form-popup" href="">Напишите нам</a>
+                <a class="button button-red button-form-popup" href=""><span class="button-text">Напишите нам</span></a>
             </div>
           </div>
         </div>
@@ -277,7 +278,7 @@
             <textarea class="form-input" name="text" id="appointment-text" rows="5" cols="55" placeholder="В свободной форме"></textarea>
           </p>
           <p class="form-field col-large">
-            <button class="button button-red" type="submit">Отправить</button>
+            <button class="button button-red" type="submit"><span class="button-text">Отправить</span></button>
           </p>
         </div>
       </form>
