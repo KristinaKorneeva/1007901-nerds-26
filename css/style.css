@@ -643,20 +643,20 @@ a {
 .sort-icon-up {
   margin-left: 17px;
 }
-.sorting-filtr .filter-label-sort {
+.sorting-filtr  {
   cursor: pointer;
   color: #b2b2b2;
   font-size: 14px;
   text-transform: uppercase;
 }
-.sorting-filtr .sorting-filtr-active {
+ .sorting-filtr-active {
   color :#000000;
 }
-.sorting-filtr:hover .filter-label-sort,
-.sorting-filtr:focus .filter-label-sort {
+.sorting-filtr:hover ,
+.sorting-filtr:focus  {
   color: #666666;
 }
-.sorting-filtr:active .filter-label-sort {
+.sorting-filtr:active {
   color: #000000;
 }
 .icon-up .filter-label-sort {
