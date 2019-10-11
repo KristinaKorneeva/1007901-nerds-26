@@ -5,7 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -166,8 +166,8 @@
             <div class="inner">
               <div class="footer-contacts">
                 <h3  class="tagline">NЁRDS DESIGN STUDIO</h3>
-                  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                  <p>тел. +7 (812) 275-75-75</p>
+                  <p class="footer-tel">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                  <p class="footer-tel">тел. +7 (812) 275-75-75</p>
                   <a class="button button-red button-form-popup" href=""><span class="button-text">Напишите нам</span></a>
               </div>
             </div>
@@ -200,7 +200,7 @@
         </p>
         <p class="form-field col-medium">
           <label class="form-label" for="appointment-email">Ваш e-mail:</label>
-          <input class="form-input" type="text" name="mail" id="appointment-email" placeholder="email@example.com" required>
+          <input class="form-input" type="email" name="mail" id="appointment-email" placeholder="email@example.com" required>
         </p>
         <p class="form-field col-large">
           <label class="form-label" for="appointment-text">Текст письма:</label>

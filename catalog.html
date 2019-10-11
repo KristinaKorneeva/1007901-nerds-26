@@ -5,7 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -38,7 +38,7 @@
     <section class="filters">
       <form method="get" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">Фильтр</h2>
-          <fieldset class="filter-item">
+          <fieldset class="filter-item-rang">
             <legend class="tagline">Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
@@ -205,7 +205,7 @@
                 <a class="button pagination-button pagination-active" href=""><span class="button-text">1</span></a>
                 <a class="button pagination-button" href=""><span class="button-text">2</span></a>
                 <a class="button pagination-button" href=""><span class="button-text">3</span></a>
-                <a class="button pagination-button" href=""><span class="button-text">следующая</span></a>
+                <a class="button pagination-button pagination-next" href=""><span class="button-text">следующая</span></a>
             </section>
         </section>
     </section>
@@ -250,7 +250,7 @@
           </p>
           <p class="form-field col-medium">
             <label class="form-label" for="appointment-email">Ваш e-mail:</label>
-            <input class="form-input" type="text" name="mail" id="appointment-email" placeholder="email@example.com" required>
+            <input class="form-input" type="email" name="mail" id="appointment-email" placeholder="email@example.com" required>
           </p>
           <p class="form-field col-large">
             <label class="form-label" for="appointment-text">Текст письма:</label><br>
